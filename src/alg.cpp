@@ -5,16 +5,16 @@
 
 bool checkPrime(uint64_t value) {
   uint64_t col = 0;
-	for (int sc = value; sc >= 1; sc--) {
-		if ((value % sc) == 0) {
-			col += 1;
-		}
-	}
-	if (col == 2) {
-		return true;
-	} else {
-		return false;
-	}
+  for (int sc = value; sc >= 1; sc--) {
+    if ((value % sc) == 0) {
+      col += 1;
+    }
+  }
+  if (col == 2) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 uint64_t nPrime(uint64_t n) {
